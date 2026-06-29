@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PokéJisho</string>
     <string name="search_placeholder">Search Pokémon, moves, items…</string>
+    <string name="search_clear">Clear search</string>
     <string name="filter_title">Filter by type</string>
     <string name="filter_all">All</string>
     <string name="type_pokemon">Pokémon</string>

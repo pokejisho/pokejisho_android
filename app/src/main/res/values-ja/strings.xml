@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ポケ辞書</string>
     <string name="search_placeholder">ポケモン・技・道具を検索…</string>
+    <string name="search_clear">検索をクリア</string>
     <string name="filter_title">種類で絞り込む</string>
     <string name="filter_all">すべて</string>
     <string name="type_pokemon">ポケモン</string>
