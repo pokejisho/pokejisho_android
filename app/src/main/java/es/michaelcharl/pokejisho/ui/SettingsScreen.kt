@@ -3,6 +3,7 @@ package es.michaelcharl.pokejisho.ui
 import android.net.Uri
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -52,7 +53,7 @@ fun SettingsScreen(userDataViewModel: UserDataViewModel, onBack: () -> Unit) {
                 title = { Text(stringResource(R.string.settings_title)) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.common_ok))
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.common_back))
                     }
                 },
             )
@@ -128,7 +129,7 @@ private fun languageLabel(language: AppLanguage): String = when (language) {
 
 @Composable
 private fun RadioRow(label: String, selected: Boolean, onSelect: () -> Unit) {
-    androidx.compose.foundation.layout.Row(
+    Row(
         Modifier.fillMaxWidth().selectable(selected = selected, onClick = onSelect).padding(vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {

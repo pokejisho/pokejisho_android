@@ -57,6 +57,7 @@ class SearchTest {
     fun typeFilterRestrictsResults() {
         val r = store.search("a", filter = EntryType.MOVE)
         assertTrue(r.priority.isEmpty() && r.results.all { it.type == EntryType.MOVE })
+        assertTrue(r.results.isNotEmpty())
     }
 
     @Test

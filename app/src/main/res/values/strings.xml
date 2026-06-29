@@ -48,6 +48,7 @@
     <string name="scan_gallery">Choose from gallery</string>
     <string name="camera_denied_title">Camera Access Needed</string>
     <string name="camera_denied_message">Enable camera access in Settings to scan text from photos.</string>
+    <string name="common_back">Back</string>
     <string name="common_cancel">Cancel</string>
     <string name="common_ok">OK</string>
     <string name="common_open_settings">Open Settings</string>

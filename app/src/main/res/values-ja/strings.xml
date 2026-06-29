@@ -48,6 +48,7 @@
     <string name="scan_gallery">ギャラリーから選ぶ</string>
     <string name="camera_denied_title">カメラへのアクセスが必要です</string>
     <string name="camera_denied_message">写真から文字を読み取るには、設定でカメラへのアクセスを許可してください。</string>
+    <string name="common_back">戻る</string>
     <string name="common_cancel">キャンセル</string>
     <string name="common_ok">OK</string>
     <string name="common_open_settings">設定を開く</string>
