@@ -168,4 +168,4 @@ private fun bulbapediaUrl(entry: DictionaryEntry): String =
     "https://bulbapedia.bulbagarden.net/wiki/" + entry.english.replace(" ", "_")
 
 private fun pokewikiUrl(entry: DictionaryEntry): String =
-    "https://wiki.xn--rckteqa2e.com/wiki/" + URLEncoder.encode(entry.japanese, "UTF-8").replace("+", "%20")
+    "https://wiki.pokemonwiki.com/wiki/" + URLEncoder.encode(entry.japanese, "UTF-8").replace("+", "%20")
