@@ -25,12 +25,17 @@ suspend fun recognizeBlocks(@Suppress("UNUSED_PARAMETER") context: Context, bitm
     val latin = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
     val japanese = TextRecognition.getClient(JapaneseTextRecognizerOptions.Builder().build())
 
-    val blocks = mutableListOf<String>()
-    runCatching { latin.process(image).await() }.getOrNull()?.textBlocks?.forEach { blocks += it.text }
-    runCatching { japanese.process(image).await() }.getOrNull()?.textBlocks?.forEach { blocks += it.text }
+    try {
+        val blocks = mutableListOf<String>()
+        runCatching { latin.process(image).await() }.getOrNull()?.textBlocks?.forEach { blocks += it.text }
+        runCatching { japanese.process(image).await() }.getOrNull()?.textBlocks?.forEach { blocks += it.text }
 
-    return blocks
-        .map { it.replace("\n", " ").trim() }
-        .filter { it.isNotEmpty() }
-        .distinct()
+        return blocks
+            .map { it.replace("\n", " ").trim() }
+            .filter { it.isNotEmpty() }
+            .distinct()
+    } finally {
+        latin.close()
+        japanese.close()
+    }
 }
