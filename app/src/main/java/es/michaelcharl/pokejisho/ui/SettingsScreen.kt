@@ -101,7 +101,7 @@ fun SettingsScreen(userDataViewModel: UserDataViewModel, onBack: () -> Unit) {
                     TextButton(onClick = { openUrl(context, "https://pokeapi.co") }) {
                         Text(stringResource(R.string.about_pokeapi_link))
                     }
-                    TextButton(onClick = { openUrl(context, "https://github.com/pokejisho/pokejisho_ios") }) {
+                    TextButton(onClick = { openUrl(context, "https://github.com/pokejisho/pokejisho_android") }) {
                         Text(stringResource(R.string.about_github))
                     }
                     Footnote(
