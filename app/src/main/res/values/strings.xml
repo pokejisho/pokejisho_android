@@ -17,7 +17,6 @@
     <string name="recent_title">Recent</string>
     <string name="results_none_title">No results</string>
     <string name="results_none">No matches found. Try a different spelling or language.</string>
-    <string name="detail_katakana">Katakana</string>
     <string name="detail_romaji">Romaji</string>
     <string name="detail_learn_more">Learn more</string>
     <string name="detail_bulbapedia">Bulbapedia (EN)</string>

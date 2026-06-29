@@ -110,7 +110,6 @@ fun DetailScreen(
                 }
                 FieldRow("English", entry.english)
                 FieldRow("日本語", entry.japanese)
-                FieldRow(stringResource(R.string.detail_katakana), entry.katakana)
                 FieldRow(stringResource(R.string.detail_romaji), entry.romaji)
             }
 

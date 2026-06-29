@@ -17,7 +17,6 @@
     <string name="recent_title">最近の検索</string>
     <string name="results_none_title">結果なし</string>
     <string name="results_none">一致する項目が見つかりませんでした。別のつづりや言語でお試しください。</string>
-    <string name="detail_katakana">カタカナ</string>
     <string name="detail_romaji">ローマ字</string>
     <string name="detail_learn_more">詳しく見る</string>
     <string name="detail_bulbapedia">Bulbapedia（英）</string>
